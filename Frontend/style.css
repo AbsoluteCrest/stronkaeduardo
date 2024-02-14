@@ -17,16 +17,31 @@
 
 }
 
-#send {
+#hide,
+#show {
     padding: 5px;
     font-size: 1em;
     width: 10%;
     height: 3%;
     border: 3px solid #000000;
-    transition: all 0.5 ease-in-out
+    transition: all 2.0 ease-in-out;
+    position: relative;
+    display: inline;
+    margin-left: 45%;
+
 
 }
 
-#send:hover{
-    transition: all 0.5 ease-in-out;
+#hide:hover {
+    transition: all 2.0 ease-in-out;
+    border-radius: 2rem;
+    background-color: blue;
+
+}
+
+#show:hover {
+    transition: all 2.0 ease-in-out;
+    border-radius: 2rem;
+    background-color: blue;
+
 }

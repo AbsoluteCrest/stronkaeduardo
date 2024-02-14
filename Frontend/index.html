@@ -5,6 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#hide").click(function () {
+                $("img").hide();
+            });
+            
+            $("#show").click(function(){
+                $("img").show();
+            });
+        });
+    </script>
     <title>EDUARDO</title>
 </head>
 
@@ -17,19 +29,13 @@
         <img src="../img/file-code-solid.png" alt="">
     </div>
     <br><br>
-   
-        <button id="send">send</button>
- 
- 
+
+    <button id="show">show</button>
+    <br><br>
+    <button id="hide">hide</button>
+
+
 
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">
 
-    $(document).ready(function () {
-        $("#send").click(function () {
-            $("img").hide();
-        });
-    });
-
-</script>
 </html>
