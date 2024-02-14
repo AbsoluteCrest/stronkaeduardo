@@ -6,14 +6,18 @@
     position: relative;
 }
 
+body {
+    margin: 0;
+}
+
 #divimg1 {
-    border: 3px solid #000000;
-    border-radius: 2rem;
+    background-color: rgb(125, 125, 125);
     position: sticky;
     justify-content: space-evenly;
     display: flex;
     height: 35%;
     width: 100%;
+    margin: 0;
 
 }
 
@@ -28,7 +32,7 @@
     position: relative;
     display: inline;
     margin-left: 45%;
-    box-shadow: 0px 4px 4px 0px rgb(125, 125, 125);
+    box-shadow: 0px 2.5px 2.5px 0px rgb(125, 125, 125);
 
 }
 
@@ -44,4 +48,25 @@
     border-radius: 2rem;
     background-color: rgb(125, 125, 125);
 
+}
+
+.document:hover {
+    transform: scale(1.05);
+}
+
+.loader {
+    width: 120px;
+    height: 20px;
+    -webkit-mask: linear-gradient(90deg, #000 70%, #0000 0) 0/20%;
+    background:
+    linear-gradient(#000 0 0) 0/0% no-repeat #ddd;
+    animation: l4 2s infinite steps(6);
+    position: relative;
+    margin-left: 46%;
+}
+
+@keyframes l4 {
+    100% {
+        background-size: 120%
+    }
 }
